@@ -23,7 +23,7 @@ public class Application implements CommandLineRunner{
 
 		// save a couple of movies
 		repository.save(new Movie("tt1979320", "Rush", 2013, Arrays.asList("Action", "Biography", "Drama")));
-		repository.save(new Movie("tt0111164", "The Shawshank Redemption", 1994, Arrays.asList("Crime", "Drama")));
+		repository.save(new Movie("tt0111161", "The Shawshank Redemption", 1994, Arrays.asList("Crime", "Drama")));
 
 		List<Movie> response = repository.findByName("Rush");
 		System.out.println(response);
